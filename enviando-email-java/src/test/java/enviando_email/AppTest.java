@@ -21,6 +21,8 @@ public class AppTest {
 
 		try {
 			Properties properties = new Properties();
+			
+			properties.put("mail.smtp.ssl.trust", "*");
 			properties.put("mail.smtp.auth", "true");
 			properties.put("mail.smtp.starttls", "true");
 			properties.put("mail.smtp.host", "smtp.gmail.com");
